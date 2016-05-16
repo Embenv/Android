@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Standard weight.</string>
+    <string name="action_settings">空置按钮</string>
+    <string name="title_homepage">计算你的标准体重</string>
+    <string name="sex">性别：</string>
+    <string name="boy">男</string>
+    <string name="girl">女</string>
+	<string name="height">身高：</string>
+	<string name="unit">cm</string>
+	<string name="button_calculate">计算</string>
+
+</resources>

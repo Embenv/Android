@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Homepage_layout_relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.primary.weight.MainActivity" >
+
+<TextView
+        android:id="@+id/Title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:textSize="36sp"
+        android:textColor="#ff0000"
+        android:text="@string/title_homepage" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title_textview"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp" >
+
+        <TextView
+            android:id="@+id/Textview_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#323d41"
+            android:text="@string/sex" />
+
+        <RadioGroup
+            android:id="@+id/Radiogroup_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/Radiobutton_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#323d41"
+                android:textSize="25sp"
+                android:textColor="#323d41"
+                android:text="@string/boy"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/Radiobutton_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#323d41"
+                android:textSize="25sp"
+                android:textColor="#323d41"
+                android:text="@string/girl" />
+        </RadioGroup>
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/LinearLayout_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout_sex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/Textview_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#323d41"
+            android:text="@string/height" />
+
+        <EditText
+            android:id="@+id/Edittext_height"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#323d41" >
+            
+			<requestFocus />
+		</EditText>
+
+        <TextView
+            android:id="@+id/Textview_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#323d41"
+            android:text="@string/unit" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Button_calculate_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:textColor="#17690c"
+        android:text="@string/button_calculate" />
+
+</RelativeLayout>
