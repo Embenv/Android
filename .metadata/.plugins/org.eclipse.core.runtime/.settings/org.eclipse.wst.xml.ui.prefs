@@ -1,8 +1,0 @@
-eclipse.preferences.version=1
-newFileTemplateName=xml declaration
-org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-tagAttributeEquals=\#008000 | null | false | false | false | false
-tagAttributeName=\#008000 | null | false | false | false | false
-tagAttributeValue=\#808080 | null | true | false | false | false
-xml_content_assist_default_page_sort_order=org.eclipse.wst.xml.ui.proposalCategory.xmlTags\u0000org.eclipse.wst.xml.ui.proposalCategory.xmlTemplates\u0000
-xml_content_assist_own_page_sort_order=org.eclipse.wst.xml.ui.proposalCategory.xmlTemplates\u0000org.eclipse.wst.xml.ui.proposalCategory.xmlTags\u0000
