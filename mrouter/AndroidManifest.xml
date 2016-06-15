@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="embedded.tools.mrouter"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="22" />
+
+    <!-- 权限的获取(这里获取网络的所有权限) -->
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <!-- android:label="@string/setup_name"这一句是安装时显示的名字 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/setup_name"
+        android:theme="@style/AppTheme" >
+        <!-- android:label="@string/software_name"这一句是软件显示的名字(有点不理解) -->
+        <activity
+            android:name=".Home"
+            android:label="@string/software_name" >
+            
+            <intent-filter>
+                
+                <action android:name="android.intent.action.MAIN" />
+                
+                <category android:name="android.intent.category.LAUNCHER" />
+                
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name=".DrawerMenu"
+            android:label="@string/software_name" >
+        </activity>
+        
+        <activity
+            android:name=".Information"
+            android:label="@string/software_name" >
+        </activity>
+        
+        <activity
+            android:name=".MusicPlay"
+            android:label="@string/software_name" >
+        </activity>
+        
+        <activity
+            android:name=".MediaStream"
+            android:label="@string/software_name" >
+        </activity>
+        
+    </application>
+
+</manifest>

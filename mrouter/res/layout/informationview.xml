@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    
+        <RelativeLayout
+        android:id="@+id/informationview_nestedlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#212121" >
+
+        <ImageButton
+            android:id="@+id/informationview_imagebutton_closeac"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/closeac" />
+
+        <ImageButton
+            android:id="@+id/informationview_imagebutton_undo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/undo" />
+
+        <TextView
+            android:id="@+id/informationview_textview_aboutsoftware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="关于软件"
+            android:textSize="20dp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/informationview_nestedlayout"
+            android:background="@drawable/redborder" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="300dp"
+                android:layout_height="138dp"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/redborder"
+                android:src="@drawable/board" />
+
+            <TextView
+                android:id="@+id/informationview_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageView1"
+                android:gravity="center"
+                android:text="使用须知"
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/informationview_textview2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/informationview_textview1"
+                android:background="@drawable/grayborder"
+                android:gravity="center"
+                android:text="本应用为基于开发板Widora开发的配套终端应用程序\n某些功能的体验必须依靠硬件提供基础"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/informationview_textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/informationview_textview2"
+                android:gravity="center"
+                android:text="特别声明"
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/informationview_textview4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/informationview_textview3"
+                android:background="@drawable/grayborder"
+                android:gravity="center"
+                android:text="本应用仅供学习研究所用，请勿随意转载\n部分代码源自CSDN社区及安卓Drawerlayout官方DEMO"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/informationview_textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="Copyright © 2016-2017"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/musicplayview_totallayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    <RelativeLayout
+        android:id="@+id/musicplayview_nestedlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#212121" >
+
+        <ImageButton
+            android:id="@+id/musicplayview_imagebuttom_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/closeac" />
+
+        <ImageButton
+            android:id="@+id/musicplayview_imagebuttom_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/undo" />
+
+        <TextView
+            android:id="@+id/musicplayview_textview_musiccontrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="音乐控制台"
+            android:textSize="20dp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+    
+	<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/musicplayview_nestedlayout"
+            android:background="@drawable/redborder" >
+
+    <RelativeLayout
+        android:id="@+id/musicplayview_nestedlayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/grayborder"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/musicplayview_imagebuttom_pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/musicplayview_imagebuttom_play"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/mpausenor" />
+
+        <ImageButton
+            android:id="@+id/musicplayview_imagebuttom_stop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/musicplayview_imagebuttom_play"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/mstopnor" />
+
+        <ImageButton
+            android:id="@+id/musicplayview_imagebuttom_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/mplaynor" />
+
+        <ImageButton
+            android:id="@+id/musicplayview_imagebuttom_vcut"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/musicplayview_imagebuttom_pause"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/vcutnor" />
+
+        <ImageButton
+            android:id="@+id/musicplayview_imagebuttom_vadd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/musicplayview_imagebuttom_stop"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/vaddnor" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/musicplayview_textview_backmessage"
+        android:layout_width="320dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grayborder"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/musicplayview_textview_backmessagetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/musicplayview_textview_backmessage"
+        android:layout_below="@+id/musicplayview_textview_backmessage"
+        android:text="返回信息窗口"
+        android:textColor="#000000" />
+
+    </RelativeLayout>
+</RelativeLayout>
