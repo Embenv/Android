@@ -11,17 +11,54 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/setup_name"
         android:theme="@style/AppTheme" >
+        <provider
+            android:name=".mDiaryContentProvider"
+            android:authorities="com.primary.mdiary.mdiarycontentprovider" >
+        </provider>
+
         <activity
-            android:name=".WelcomeActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
+            android:name=".Welcome"
+            android:label="@string/soft_name" >
+            
+             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            
         </activity>
+        <activity
+            android:name=".DiariesList"
+            android:label="@string/soft_name" >
+        </activity>
+        <activity
+            android:name=".DiaryEditor"
+            android:label="@string/soft_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+
+            
+            <intent-filter >
+				<action android:name="com.primary.mdiary.DiaryEditor.EDIT_DIARY" />
+				<category
+					android:name="android.intent.category.DEFAULT" />
+				<data
+					android:mimeType="vnd.android.cursor.item/vnd.google.diary" />
+			</intent-filter>
+
+
+			<intent-filter >
+				<action android:name="com.primary.mdiary.DiaryEditor.action.INSERT_DIARY" />
+				<category
+					android:name="android.intent.category.DEFAULT" />
+				<data
+					android:mimeType="vnd.android.cursor.dir/vnd.google.diary" />
+			</intent-filter>
+            
+            
+        </activity>
+
     </application>
 
 </manifest>
